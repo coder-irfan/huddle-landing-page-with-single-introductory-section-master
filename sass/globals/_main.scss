@@ -1,0 +1,126 @@
+@use "function" as m;
+
+.main {
+    padding: m.rem(34) m.rem(41);
+
+    @include breakpoint('large') {
+        padding: m.rem(0) m.rem(80) m.rem(0);
+    }
+
+    &__logo {
+        width: m.rem(128);
+
+        @include breakpoint('medium') {
+            width: m.rem(170);
+        }
+
+        @include breakpoint('large') {
+            margin-top: m.rem(55);
+            width: m.rem(200);
+        }
+    }
+
+    &__wrapper {
+
+        @include breakpoint('large') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: m.rem(20);
+        }
+    }
+
+    &__img {
+        width: m.rem(694);
+        max-width: 100%;
+        margin: m.rem(60) auto m.rem(55);
+
+        @include breakpoint('large') {
+            margin-top: m.rem(100);
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__texts {
+
+        text-align: center;
+
+        @include breakpoint('large') {
+            max-width: m.rem(495);
+            text-align: left;
+        }
+
+        & h1 {
+            font-size: m.rem(27);
+            font-family: $primary-family;
+            font-weight: 600;
+
+            @include breakpoint('large') {
+                font-size: m.rem(44);
+            }
+        }
+
+        & p {
+            font-size: m.rem(17);
+            font-family: $secondary-family;
+            font-weight: 400;
+            margin: m.rem(16) 0 m.rem(27);
+
+            @include breakpoint('large') {
+                margin-bottom: m.rem(26);
+            }
+        }
+    }
+
+    &__btn {
+        width: m.rem(213);
+        max-width: 100%;
+        padding: m.rem(10) 0;
+        margin-bottom: m.rem(68);
+        border-radius: m.rem(30);
+        font-family: $primary-family;
+        color: $violet;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 m.rem(6) m.rem(16) rgba(0,0,0,0.5);
+        transition: .3s;
+
+        &:hover {
+            background-color: $soft-magenta;
+            color: white;
+        }
+
+        @include breakpoint('large') {
+            width: m.rem(190);
+            font-size: m.rem(18);
+            padding: m.rem(12) 0;
+        }
+    }
+
+    &__medias {
+        text-align: center;
+
+        @include breakpoint('large') {
+            text-align: right;
+        }
+        
+        & .fa-brands {
+            font-size: m.rem(14);
+            padding: m.rem(7);
+            margin: 0 m.rem(3);
+            border: 1px solid #fff;
+            border-radius: 50%;
+            transition: .3s;
+
+            &:hover {
+                color: $soft-magenta;
+                border: 1px solid $soft-magenta;
+            }
+
+            &:nth-child(1) {
+                padding: m.rem(7) m.rem(10);
+            }
+        }
+    }
+}

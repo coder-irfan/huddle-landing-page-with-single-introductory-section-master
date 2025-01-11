@@ -1,0 +1,31 @@
+@import "variable";
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $violet;
+    color: white;
+    line-height: 1.5;
+
+    @include breakpoint('large') {
+        background-image: url('../images/bg-desktop.svg');
+        background-position: -100% 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

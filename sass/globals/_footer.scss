@@ -1,0 +1,17 @@
+@use 'function' as x;
+.footer {
+    text-align: center;
+    padding-bottom: x.rem(10);
+   
+    font-size: x.rem(12);
+
+    @include breakpoint('large') {
+        text-align: right;
+        font-size: x.rem(14);
+        padding-right: x.rem(20);
+    }
+
+    & a {
+        color: $soft-magenta;
+    }
+}
