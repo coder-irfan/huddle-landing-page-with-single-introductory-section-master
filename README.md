@@ -4,7 +4,7 @@ This is my solution to the [Huddle landing page with single introductory section
 
 ## 🚀 Live Site
 
-🔗 [Click here to view the live project](https://mohammad-irfan-noorzada.github.io/huddle-landing-page-with-single-introductory-section-master/)
+🔗 [Click here to view the live project](https://coder-irfan.github.io/huddle-landing-page-with-single-introductory-section-master/)
 
 ## 🛠 Built With
 
@@ -29,7 +29,7 @@ This is my solution to the [Huddle landing page with single introductory section
 
 ## 🙋‍♂️ Author
 
-- GitHub: [@Mohammad-Irfan-Noorzada](https://github.com/Mohammad-Irfan-Noorzada)
+- GitHub: [@Mohammad-Irfan-Noorzada](https://github.com/coder-irfan)
 - Frontend Mentor: [@Mohammad-Irfan-Noorzada](https://www.frontendmentor.io/profile/Mohammad-Irfan-Noorzada)
 
 ---
